@@ -15,7 +15,7 @@ resource "kubernetes_persistent_volume_claim" "default" {
   spec {
     access_modes = ["ReadWriteOnce"]
     resources {
-      requests {
+      requests = {
         storage = "${var.mount_size}"
       }
     }
