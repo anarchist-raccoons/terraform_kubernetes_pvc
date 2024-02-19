@@ -11,3 +11,4 @@ variable "mount_size" {
 variable "storage_class_name" { 
   default = "azurefile"
 }
+variable "volume_name" {}
