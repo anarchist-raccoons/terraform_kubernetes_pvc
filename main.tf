@@ -21,6 +21,6 @@ resource "kubernetes_persistent_volume_claim" "default" {
     }
     storage_class_name = var.storage_class_name
     # Handy if we want to use an existing voluem, not it not
-    # volume_name = var.volume_name
+    volume_name = var.volume_name
   }
 }
