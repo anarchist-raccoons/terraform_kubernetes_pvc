@@ -12,3 +12,7 @@ variable "storage_class_name" {
   default = "azurefile"
 }
 #variable "volume_name" {}
+variable "access_modes" {
+  type=list(string)
+  default = ["ReadWriteOnce"]
+}
